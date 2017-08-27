@@ -1,0 +1,56 @@
+
+------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+15.0(150000 ms)/1.000s   5063    4689.73 s        54961  69.175.125.20:5060(UDP)
+
+  0 new calls during 0.000 s period      0 ms scheduler resolution
+  0 calls (limit 2000)                   Peak was 2000 calls, after 133 s
+  0 Running, 345 Paused, 0 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  1 open sockets                        
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         54961     28        0                  
+         100 <----------         54946     0         0         0        
+         180 <----------         0         0         0         1082     
+         183 <----------         0         0         0         0        
+         200 <----------         53879     1         0         0        
+         ACK ---------->         53879     1                            
+       Pause [     2:30]         53879                         0        
+         BYE ---------->         53879     30        0                  
+         200 <----------         53879     0         0         0        
+
+------------------------------ Test Terminated --------------------------------
+
+
+----------------------------- Statistics Screen ------- [1-9]: Change Screen --
+  Start Time             | 2016-05-13   01:55:48.072046 1463122548.072046         
+  Last Reset Time        | 2016-05-13   03:13:57.809861 1463127237.809861         
+  Current Time           | 2016-05-13   03:13:57.812381 1463127237.812381         
+-------------------------+---------------------------+--------------------------
+  Counter Name           | Periodic value            | Cumulative value
+-------------------------+---------------------------+--------------------------
+  Elapsed Time           | 00:00:00:002000           | 01:18:09:740000          
+  Call Rate              |    0.000 cps              |   11.719 cps             
+-------------------------+---------------------------+--------------------------
+  Incoming call created  |        0                  |        0                 
+  OutGoing call created  |        0                  |    54961                 
+  Total Call created     |                          |    54961                 
+  Current Call           |        0                  |                          
+-------------------------+---------------------------+--------------------------
+  Successful call        |        0                  |    53879                 
+  Failed call            |        0                  |     1082                 
+-------------------------+---------------------------+--------------------------
+  Call Length            | 00:00:00:000000           | 00:02:41:193000          
+------------------------------ Test Terminated --------------------------------
+
+
+2016-05-13      03:10:42.757741 1463127042.757741: Aborting call on unexpected message for Call-Id '53788-17830@69.175.125.29': while expecting '180' (index 2), received 'SIP/2.0 486 Unable to Comply
+Via: SIP/2.0/UDP 69.175.125.29:5063;branch=z9hG4bK-17830-53788-0
+From: sipp <sip:user_jyg5c5@newacc2.pbx-cloud.velvetel.net:5063>;tag=17830SIPpTag0053788
+To:  <sip:5001@newacc2.pbx-cloud.velvetel.net:5060>;tag=48f91ec1cfee1cf8100632b82939fba1-7715
+Call-ID: 53788-17830@69.175.125.29
+CSeq: 1 INVITE
+Content-Length: 0
+
+

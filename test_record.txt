@@ -1,0 +1,46 @@
+
+------------------------------ Scenario Screen -------- [1-9]: Change Screen --
+  Call-rate(length)   Port   Total-time  Total-calls  Remote-host
+15.0(150000 ms)/1.000s   5063    5949.63 s        65461  69.175.125.20:5060(UDP)
+
+  0 new calls during 0.000 s period      0 ms scheduler resolution
+  0 calls (limit 1800)                   Peak was 1800 calls, after 120 s
+  0 Running, 87 Paused, 0 Woken up
+  0 dead call msg (discarded)            0 out-of-call msg (discarded)        
+  1 open sockets                        
+
+                                 Messages  Retrans   Timeout   Unexpected-Msg
+      INVITE ---------->         65461     6         0                  
+         100 <----------         65461     0         0         0        
+         180 <----------         0         0         0         131      
+         183 <----------         65327     0         0         0        
+         200 <----------         65329     0         0         1        
+         ACK ---------->         65329     0                            
+       Pause [     2:30]         65329                         0        
+         BYE ---------->         65329     1         0                  
+         200 <----------         65329     0         0         0        
+
+------------------------------ Test Terminated --------------------------------
+
+
+----------------------------- Statistics Screen ------- [1-9]: Change Screen --
+  Start Time             | 2016-05-16   01:36:08.210158 1463380568.210158         
+  Last Reset Time        | 2016-05-16   03:15:17.848107 1463386517.848107         
+  Current Time           | 2016-05-16   03:15:17.853972 1463386517.853972         
+-------------------------+---------------------------+--------------------------
+  Counter Name           | Periodic value            | Cumulative value
+-------------------------+---------------------------+--------------------------
+  Elapsed Time           | 00:00:00:005000           | 01:39:09:643000          
+  Call Rate              |    0.000 cps              |   11.003 cps             
+-------------------------+---------------------------+--------------------------
+  Incoming call created  |        0                  |        0                 
+  OutGoing call created  |        0                  |    65461                 
+  Total Call created     |                          |    65461                 
+  Current Call           |        0                  |                          
+-------------------------+---------------------------+--------------------------
+  Successful call        |        0                  |    65329                 
+  Failed call            |        0                  |      132                 
+-------------------------+---------------------------+--------------------------
+  Call Length            | 00:00:00:000000           | 00:02:36:303000          
+------------------------------ Test Terminated --------------------------------
+
